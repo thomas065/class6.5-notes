@@ -202,7 +202,7 @@ Open load balancer, open frontend IP, verify expected beavior
 
 ## Part 4: Teardown Guide
 
-Follow in strict order:
+Follow in strict order, ensure each resource is deleted before going to the next step:
 
 1. Delete **Load Balancer** only (do not select other checkboxes)
 2. Frontend is removed automatically
