@@ -11,13 +11,11 @@
 ## Documentation
 
 - [LB Basics](https://cloud.google.com/load-balancing/docs/application-load-balancer)
-
 - [Regional External Application LB](https://cloud.google.com/load-balancing/docs/https/setting-up-reg-ext-https-lb)
 
 - [App health checks](https://cloud.google.com/compute/docs/instance-groups/autohealing-instances-in-migs)
 
 - [Cloud NAT](https://cloud.google.com/blog/products/networking/simplifying-cloud-networking-for-enterprises-announcing-cloud-nat-and-more?fbclid=IwY2xjawJo3NNleHRuA2FlbQIxMAABHnMSx9a1KDFUeXEUtUjVywUhY6ded-9zkGIy6910pMk8OHURzjzKfVj0LvDg_aem_hzd4Ze83-6ttbDtaWnxd-A)
-
 - [Cloud NAT](https://l.facebook.com/l.php?u=https%3A%2F%2Fcloud.google.com%2Fnat%2Fdocs%2Foverview%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR4Znhvebmvt1Loipbv8vAaPrtoqBNPFzEDUeBowPDQ6xhNP4jCEYG-38WAHGA_aem_ZjYiHNs5GkLfvHtz-ZQNgg&h=AT271Xn6VSadpqyxYORKXCWoTdp-UwZS0uBT_ARCa45hc3fAe4z3vMLfpmThzeyKBTgtuASY8cCq6_iy0NYsWVMFWAyVF-eRu2eWtVP7lL8hGbnkU1APOJFwzQ7UJtBZvF6aYViX-WnOWdlOjUnsyw)
 
 ## Resource Provisioning Order
@@ -25,9 +23,9 @@
 1. VPC
 
 2. Firewall Rules
- - or
+ or
 3. Cloud NAT + Cloud Router
- - or
+ or
 4. Instance Template
 
 5. Managed Instance Group (MIG) with health checks & autoscaling
@@ -84,13 +82,13 @@ Questions to consider:
 Instructions:
 1. Go to **VPC > Firewall Rules**
 2. Click **Create Firewall Rule**
-3. Name the firewall rule something like: <YOUR VPC NAME>-<ACTION>-<PROTOCOL/PURPOSE>
+3. Name the firewall rule something like: "<YOUR-VPC-NAME>-<ACTION>-<PROTOCOL/PURPOSE>"
 4. Description: "Allow HTTP and HC traffic"
 5. Direction: **Ingress**, Action: **Allow**
 6. Targets: 
-  - EXTRA IMPORTANT
-  - Choose specified Target tags (default)
-  - Choose a tag and enter it here: 
+     - EXTRA IMPORTANT
+     - Choose specified Target tags (default)
+     - Choose a tag and enter it here: 
 7. Source: **All IP ranges (0.0.0.0/0)**
 8. Protocols/Ports: TCP:80
 9. Click **Create**
