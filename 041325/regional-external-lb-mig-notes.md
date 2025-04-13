@@ -195,6 +195,9 @@ Instructions:
 - Go to Review and finalize and verify settings
 - Click **Create**
 
+#### Verify access
+Open load balancer, open frontend IP, verify expected beavior 
+
 ---
 
 ## Part 4: Teardown Guide
