@@ -1,5 +1,5 @@
 
-# Notes for Deploying a High Availability (HA), Elastic Application Load Balancer with a Managed Instance Group (MIG) Backend Using Private Instances and Cloud NAT
+# Notes for Deploying a High Availability (HA), Elastic Application with private instances
 
 ## Key Points
 - Entirely regional deployment
@@ -10,13 +10,17 @@
 
 ## Documentation
 
-- [LB Basics](https://cloud.google.com/load-balancing/docs/application-load-balancer)
-- [Regional External Application LB](https://cloud.google.com/load-balancing/docs/https/setting-up-reg-ext-https-lb)
+1) Load Balancer basics
+  - [LB Basics](https://cloud.google.com/load-balancing/docs/application-load-balancer)
+  - [Regional External Application LB](https://cloud.google.com/load-balancing/docs/https/setting-up-reg-ext-https-lb)
 
-- [App health checks](https://cloud.google.com/compute/docs/instance-groups/autohealing-instances-in-migs)
+2) [App health checks](https://cloud.google.com/compute/docs/instance-groups/autohealing-instances-in-migs)
 
-- [Cloud NAT](https://cloud.google.com/blog/products/networking/simplifying-cloud-networking-for-enterprises-announcing-cloud-nat-and-more?fbclid=IwY2xjawJo3NNleHRuA2FlbQIxMAABHnMSx9a1KDFUeXEUtUjVywUhY6ded-9zkGIy6910pMk8OHURzjzKfVj0LvDg_aem_hzd4Ze83-6ttbDtaWnxd-A)
-- [Cloud NAT](https://l.facebook.com/l.php?u=https%3A%2F%2Fcloud.google.com%2Fnat%2Fdocs%2Foverview%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR4Znhvebmvt1Loipbv8vAaPrtoqBNPFzEDUeBowPDQ6xhNP4jCEYG-38WAHGA_aem_ZjYiHNs5GkLfvHtz-ZQNgg&h=AT271Xn6VSadpqyxYORKXCWoTdp-UwZS0uBT_ARCa45hc3fAe4z3vMLfpmThzeyKBTgtuASY8cCq6_iy0NYsWVMFWAyVF-eRu2eWtVP7lL8hGbnkU1APOJFwzQ7UJtBZvF6aYViX-WnOWdlOjUnsyw)
+3) Cloud NAT
+  - [Cloud NAT](https://cloud.google.com/blog/products/networking/simplifying-cloud-networking-for-enterprises-announcing-cloud-nat-and-more?fbclid=IwY2xjawJo3NNleHRuA2FlbQIxMAABHnMSx9a1KDFUeXEUtUjVywUhY6ded-9zkGIy6910pMk8OHURzjzKfVj0LvDg_aem_hzd4Ze83-6ttbDtaWnxd-A)
+  - [Cloud NAT](https://l.facebook.com/l.php?u=https%3A%2F%2Fcloud.google.com%2Fnat%2Fdocs%2Foverview%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR4Znhvebmvt1Loipbv8vAaPrtoqBNPFzEDUeBowPDQ6xhNP4jCEYG-38WAHGA_aem_ZjYiHNs5GkLfvHtz-ZQNgg&h=AT271Xn6VSadpqyxYORKXCWoTdp-UwZS0uBT_ARCa45hc3fAe4z3vMLfpmThzeyKBTgtuASY8cCq6_iy0NYsWVMFWAyVF-eRu2eWtVP7lL8hGbnkU1APOJFwzQ7UJtBZvF6aYViX-WnOWdlOjUnsyw)
+
+4) [Architecture](https://miro.medium.com/v2/resize:fit:720/format:webp/1*HFhLMWxzqjSsDgQhLuLsEQ.jpeg)
 
 ## Resource Provisioning Order
 
