@@ -185,12 +185,14 @@ Instructions:
    - then click on create health check 
    - name it 
    - increase check interval to 10 s, and unhealthy threshold to 3 
+   - select save
 5. Disable any Cloud Armor policies
-6. Click **Create**
+6. Select OK (if prompted)
+7. Click **Create**
 
 #### Final Steps
 - Skip Routing Rules
-- Review configuration
+- Go to Review and finalize and verify settings
 - Click **Create**
 
 ---
