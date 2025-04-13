@@ -1,0 +1,81 @@
+1. Type into GCP's search engine VPC and click on 'VPC networks' from the list of options then click on 'Create VPC NETWORK' at the top of the page
+2. Type in any name according to your own naming convention.  You can also use that name for the 'Description' box also
+3. Scroll down to 'Subnets' and under 'New subnet' type in a name and description(optional)
+4. Pick a region
+5. Under 'IPv4 range type in an IPv4 address range
+6. For purposes of this lab you don't need to turn on 'Private Google Access', 'Flow logs', or Hybrid Subnets
+7. Click on 'ADD SUBNET'(again no need to turn on 'Private Google Access', 'Flow logs', or Hybrid Subnets for this lab)
+8. Leave the rest as the default values and click on the blue 'Create' button at the bottom
+9. Click on your particular VPC that you just made under 'VPC networks
+10. Click on 'SUBNETS' and because we're making a {"REGIONAL" APPLICATOIN LOAD BALANCER} make sure that both of your subnets are in the same region by observing the 'Region'     section
+11. Leaving this page alone (YOUR VPC TAB) for now(advisable) make 2 new tabs for 'Compute Engine' and 'Cloud Nat'. 3 tabs in total
+12. Using your 'Cloud Nat' page click on 'Get Started' that will take you to 'Create Cloud Nat gateway' page
+13. Type in a name under 'Gateway name' 
+14. Turn on Public under 'Nat type'
+15. Under 'Select Cloud Router' choose your VPC
+16. Choose 'YOUR' region
+17. Click on the box 'Cloud Router' and click on 'CREATE NEW ROUTER' which will bring up a another small page inside this window
+18. Type in a name and leave everything else as the default values then click on the blue 'CREATE' button then this page will disappear
+19. Leave everything else as the default values then click on the blue 'CREATE' button at the bottom of this page
+20. Goto your 'Compute Engine' tab and click/choose 'Instance templates' on the left column then click on 'Create instance template'
+21. Type in a name of your choosing
+22. Under 'Location' make sure 'Regional(recommended)' is on
+23. Under 'Advanced options' open 'Networking' and type in a name under 'Network tags' and note it somewhere for later use(VERY IMPORTANT) YOU'RE GOING TO NEED THIS NAME LATER!
+24. Goto 'Network interaces' and when you open DO NOT CLICK 'ADD a network interface' OR THE TRASH CAN(VERY IMPORTANT).  It'll say 'default' with a small arrow to it's left; click on that small arrow to the left of the word 'default'
+25. Click on where it says 'default' and choose your VPC'
+26. Under 'Subnetwork' choose a subnet
+27. Under 'External IPv4 address' box click the box and choose 'None' then right after click the word 'Done'
+28. Scroll down to 'Management'  and under 'Automation' you're going to paste a start up script( I use Beron the Great's wonderful start-up script) into the 'Automation' box
+29. Click on the 'Create' button at the bottom of the page
+30. In the left column click on 'Instance groups'
+31. Click on 'Create Instance Group'
+32. Type in a name
+33. Under 'Instance template' choose your template name
+34. Under 'Location' choose 'Multiple zones' 
+35. Choose your Region and Zones
+36. Under 'Autoscaling'
+37. Leave 'Autoscaling mode to the default(for now)
+38. Under 'Minimum number of instance let's choose 3 and under 'Maximum number of instances' let's choose 5(for now)
+39. Under 'Autohealing' open the box that says 'Health check' and 'Create a health check'
+40. Type it a name
+41. Under 'Scope' for 'Protocol'make sure it says 'TCP' and the 'Port' to be set at 80.  
+42. Under 'Health criteria' change 'Check interval' to 10 and 'Unhealthy threshold to 3 for this particular lab
+43. Click on the 'Create' button at the left bottom of this page
+44. After confirming that this process is finished LOOK TO YOUR LEFT COLUMN AND "RIGHT CLICK" on 'VM Instances to open a new tab
+45. You can observe your own VM's processing
+46. Go back to your 'VPC' tab and click on 'firewalls'
+47. Click on the button 'ADD FIRWAL RULE'
+48. Type in a name for your firewall
+49. Under 'Target tags' paste in the name that you used in step #23
+50. Under 'Source IPv4 ranges' type in 0.0.0.0/0 
+51. Check 'TCP' and input 80 for 'Ports'
+52. Click on the 'CREATE' button
+53. Type in Load Balancing  and choose Load balancing for Network Services
+54. On this page click on 'CREATE LOAD BALANCER'
+55. Choose Applicatoin Load Balancer then click the 'NEXT'button
+56. Under 'Public Facing or internal' choose Public facing then click the 'Next' buton
+57. Under 'Global or single region deployment choose 'Best for regional workloads' then click the 'Next' button
+58. Click the 'Configure' button
+59. Type in a name, choose your region, and your VPC, then click on the 'RESERVE SUBNET' button and it will bring up a small new page 
+60. Type in a name and a new IP address for your new subnet(make sure you change to a different 'THIRD OCTET"!!!)
+61. Goto 'Frontend configuration' and give it a name then click on the 'DONE' button
+62. Under 'Backend configuration' click on the new box and click 'CREATE A BACKEND SERVICE' 
+63. Give it a name, choose 'Instance group', under 'Instance group' choose yours, and type in 80 for the port numbers box
+64. Click on the 'Done' button
+65. Under 'Health check' box there will be a new smaller window that appears
+66. Give it a name, choose TCP under 'Protocol' with Port 80, and under 'Health criteria change to 10 for 'Check interval and 3 for 'Unhealthy threshold', then click the 'Save' button
+67. Click the 'Create' button
+68. You can review, then click on the 'Create' button at the bottom of the page
+
+
+
+Teardown instructions from tonight's class (4/8/25) thanks to Inconformista Roberto
+1) Load balancer BY ITSELF (don't check any boxes when deleting LB)
+2) Front end is deleted automatically
+3) Load balancer back end
+4) Instance group
+5) Load balancer health check
+6) Cloud NAT
+7) Cloud router
+8) VPC
+9) instance template
