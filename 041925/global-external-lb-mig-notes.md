@@ -16,7 +16,6 @@
      - [Cloud Skills Boost Lab](https://www.cloudskillsboost.google/focuses/1232?catalog_rank=%7B%22rank%22%3A2%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=44407083)
      - [Deep Dive into Global LB](https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-global-external-https-load-balancer-deep-dive)
 
-
 2) Cloud NAT
     - [Cloud NAT](https://cloud.google.com/blog/products/networking/simplifying-cloud-networking-for-enterprises-announcing-cloud-nat-and-more?fbclid=IwY2xjawJo3NNleHRuA2FlbQIxMAABHnMSx9a1KDFUeXEUtUjVywUhY6ded-9zkGIy6910pMk8OHURzjzKfVj0LvDg_aem_hzd4Ze83-6ttbDtaWnxd-A)
     - [Cloud NAT](https://l.facebook.com/l.php?u=https%3A%2F%2Fcloud.google.com%2Fnat%2Fdocs%2Foverview%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR4Znhvebmvt1Loipbv8vAaPrtoqBNPFzEDUeBowPDQ6xhNP4jCEYG-38WAHGA_aem_ZjYiHNs5GkLfvHtz-ZQNgg&h=AT271Xn6VSadpqyxYORKXCWoTdp-UwZS0uBT_ARCa45hc3fAe4z3vMLfpmThzeyKBTgtuASY8cCq6_iy0NYsWVMFWAyVF-eRu2eWtVP7lL8hGbnkU1APOJFwzQ7UJtBZvF6aYViX-WnOWdlOjUnsyw)
