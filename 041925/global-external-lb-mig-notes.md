@@ -172,10 +172,7 @@ Instructions:
 2. Click **Create Load Balancer**
 3. Choose: **Application Load Balancer > Public > Global**
 4. Click **Configure Load Balancer**
-
-#### Basic Configuration
-- Name the LB (e.g., `web-lb`)
-- Choose VPC
+5. Name the LB (e.g., `web-lb`)
 
 #### Frontend Configuration
 - Name it
@@ -184,14 +181,16 @@ Instructions:
 #### Backend Configuration
 1. Create backend service
 2. Name it (e.g., `backend-service`)
-3. Add the US MIG as a backend on port 80
-4. Press **Done**
-5. Add another backend and select the MIG outside of the US
+3. Go to **Backends**
+    - Add the first MIG as a new backend on port 80
+    - Choose Rate for **Balancing Mode**
+    - Maximum RPS set to 1
+    - Capacity 50%
+4. Add another backend and select the other MIG
+5. Disable the CDN
 6. Use the existing health check
-7. Disable the CDN
-8. Disable any Cloud Armor policies
-9. Select OK (if prompted)
-10. Click **Create**
+7. Disable any Cloud Armor policies
+8. Click **Create**
 
 #### Final Steps
 - Skip Routing Rules
