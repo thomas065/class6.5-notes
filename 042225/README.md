@@ -1,34 +1,29 @@
-# GitOps basics
+# Git Basics
 
-## Git/Github basics
+## Git, GitHub, and GitOps Basics
 
-Git is a version control system that tracks changes to code and lets you save and revisit different versions locally. GitHub is a cloud-based platform that hosts remote Git repositories. Git is a CLI tool. Github is a website, file hosting and SaaS platform for using Git. 
+Git is a distributed version control system that tracks changes to code, allowing you to save snapshots (commits), revisit previous versions, and collaborate efficiently. GitHub is a cloud-based platform that hosts Git repositories, providing remote storage, collaboration features (pull requests, issues), and continuous integration services.
 
-GitOps is a methodology that uses Git repositories as the single source of truth for declarative infrastructure and application configurations. Changes are made by committing to Git, which then triggers automated pipelines to apply and reconcile those changes in the target environments. This ensures versioned, auditable, and reproducible deployments with continuous feedback on drift and compliance.
+GitOps is a methodology that uses Git repositories as the single source of truth for declarative infrastructure and application configurations (for example, Terraform for infrastructure and Kubernetes manifests for applications). Every change is made by committing to Git, which triggers automated pipelines (e.g., CI/CD) to apply and reconcile these changes in target environments. This approach ensures versioned, auditable, and reproducible deployments, with continuous feedback on drift and compliance.
 
-## CLI File managment
+## CLI File Management
 
-directory is the same thing as folder
+A directory is another term for folder. 
 
-- ```pwd``` means present working directory
+- `pwd`: Print the current working directory.
+- `ls`: List the contents of the current directory.
+- `cd <path>`: Change the current directory to `<path>`.
+- `clear`: Clear the terminal screen.
+- `.`: Refers to the current directory.
+- `..`: Refers to the parent directory.
+- `~`: Refers to the home directory.
 
-- ```ls``` means list storage (print contents of directory)
+Tip: Press **Tab** to autocomplete file and directory names.
 
-- ```cd``` means change directory
+## Initial Git Setup
 
-- ```clear``` will empty the terminal of previous commands
+Set your name for commit messages and hashes:
 
-```.``` means present directory 
-
-```..``` means the parent directory 
-
-```~ ```means home directory 
-
-Press tab for autocomplete
-
-## Inital Git setup
-
-Set your name for commmit messages and hashes:
 ```bash
 git config --global user.name "Your Name"
 ```
@@ -48,9 +43,13 @@ Optional, but nice, set default branch to main (standard default branch these da
 git config --global init.defaultBranch main
 ```
 
-## putting files into an existing repo workflow
+## Workflow for publishing local edits to an existing Github remote repo
 - ```git add <file name>```
 - ```git commit -m "<commit message>"```
 - ```git push```
+
+## Workflow for setting up new Github repo and publishing local repo to the remote repo
+
+
 
 
