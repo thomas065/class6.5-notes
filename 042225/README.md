@@ -62,51 +62,54 @@ git commit -m "Your descriptive commit message"
 
 Push your changes to GitHub:
 
-    ```bash
-    git push
-    ```
+```bash
+git push
+```
+
 
 
 ## Workflow: Setting Up a New GitHub Repository and Publishing Local Files
 
 Navigate to your project directory:
 
-    ```bash
-    cd /path/to/your/project
-    ```
+```bash
+cd /path/to/your/project
+```
 
 Initialize a Git repository (if not already):
 
-    ```bash
-    git init
-    ```
+```bash
+git init
+```
+ 
 
 Stage all your existing files:
 
-    ```bash
-    git add .
-    ```
+```bash
+git add .
+```
+ 
 
 Commit your changes:
 
-    ```bash
-    git commit -m "Initial commit"
-    ```
+```bash
+git commit -m "Initial commit"
+```
 
 Add your remote origin:
 
-    ```bash
-    git remote add origin https://github.com/your-username/your-repo.git
-    ```
+```bash
+git remote add origin https://github.com/your-username/your-repo.git
+```
 
 Rename the default branch to `main`:
 
-    ```bash
-    git branch -M main
-    ```
+```bash
+git branch -M main
+```
 
 Push your initial commit to GitHub:
 
-    ```bash
-    git push -u origin main
-    ```
+```bash
+git push -u origin main
+```
