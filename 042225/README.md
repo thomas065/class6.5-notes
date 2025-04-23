@@ -36,11 +36,13 @@ git config --global user.email "your.email@example.com"
 ```
 
 **Optional:** Set VS Code as default git editor (to do commit messages, conflicts, etc): 
+
 ```bash
 git config --global core.editor "code --wait"
 ```
 
 **Optional:** (nice to use once comfortable) sets default branch to main (standard default branch these days):
+
 ```bash
 git config --global init.defaultBranch main
 ```
@@ -49,15 +51,15 @@ git config --global init.defaultBranch main
 
 Stage your changes:
 
-    ```bash
-    git add <file-name>
-    ```
+```bash
+git add <file-name>
+```
 
 Commit your changes:
 
-    ```bash
-    git commit -m "Your descriptive commit message"
-    ```
+```bash
+git commit -m "Your descriptive commit message"
+```
 
 Push your changes to GitHub:
 
