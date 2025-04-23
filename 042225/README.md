@@ -2,9 +2,9 @@
 
 ## Git, GitHub, and GitOps Basics
 
-Git is a distributed version control system that tracks changes to code, allowing you to save snapshots (commits), revisit previous versions, and collaborate efficiently. GitHub is a cloud-based platform that hosts Git repositories, providing remote storage, collaboration features (pull requests, issues), and continuous integration services.
+Git is a distributed version control system that tracks changes to code, allowing you to save snapshots (commits), revisit previous versions, and collaborate efficiently. GitHub is a cloud-based platform that hosts Git repositories, providing remote storage, collaboration features (pull requests, issues), and continuous integration (pipeline/automation) services.
 
-GitOps is a methodology that uses Git repositories as the single source of truth for declarative infrastructure and application configurations (for example, Terraform for infrastructure and Kubernetes manifests for applications). Every change is made by committing to Git, which triggers automated pipelines (e.g., CI/CD) to apply and reconcile these changes in target environments. This approach ensures versioned, auditable, and reproducible deployments, with continuous feedback on drift and compliance.
+GitOps is a DevOps methodology that uses Git repositories as the single source of truth for declarative infrastructure and application configurations (for example, Terraform for infrastructure and Kubernetes manifests for applications). Every change is made by committing to Git, which triggers automated pipelines (CI/CD) to apply these changes. This approach ensures versioned, auditable, and reproducible deployments.
 
 ## CLI File Management
 
@@ -33,23 +33,67 @@ Set your email that you used for your Github account:
 git config --global user.email "your.email@example.com"
 ```
 
-Optional (if you want VS Code to do commit messages): 
+**Optional** Set VS Code as default git editor (to do commit messages, conflicts, etc): 
 ```bash
 git config --global core.editor "code --wait"
 ```
 
-Optional, but nice, set default branch to main (standard default branch these days):
+**Optional** (nice to use once comfortable) sets default branch to main (standard default branch these days):
 ```bash
 git config --global init.defaultBranch main
 ```
 
-## Workflow for publishing local edits to an existing Github remote repo
-- Track files: `git add <file name>`
-- Stage changes: `git commit -m "<commit message>"`
-- Publish changes to Github: `git push`
+## Workflow: Publishing Local Edits to an Existing GitHub Remote
 
-## Workflow for setting up new Github repo and publishing local repo to the remote repo
+1. Stage your changes:
+    ```bash
+    git add <file-name>
+    ```
+
+2. Commit your changes:
+    ```bash
+    git commit -m "Your descriptive commit message"
+    ```
+
+3. Push your changes to GitHub:
+    ```bash
+    git push
+    ```
 
 
+## Workflow: Setting Up a New GitHub Repository and Publishing Local Files
 
+1. Navigate to your project directory:
+    ```bash
+    cd /path/to/your/project
+    ```
 
+2. Initialize a Git repository (if not already):
+    ```bash
+    git init
+    ```
+
+3. Stage all your existing files:
+    ```bash
+    git add .
+    ```
+
+4. Commit your changes:
+    ```bash
+    git commit -m "Initial commit"
+    ```
+
+5. Add your remote origin:
+    ```bash
+    git remote add origin https://github.com/your-username/your-repo.git
+    ```
+
+6. Rename the default branch to `main`:
+    ```bash
+    git branch -M main
+    ```
+
+7. Push your initial commit to GitHub:
+    ```bash
+    git push -u origin main
+    ```
