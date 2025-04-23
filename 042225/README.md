@@ -17,6 +17,9 @@ A directory is another term for folder.
 - `.`: Refers to the current directory.
 - `..`: Refers to the parent directory.
 - `~`: Refers to the home directory.
+- `touch <file name>`: Makes a file
+- `code .`: open present directory in VS code
+- `
 - Get to the correct location on your computer 
 ```cd ~/Documents/TheoWAF/class6.5/GCP```
 
