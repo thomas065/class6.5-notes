@@ -44,9 +44,9 @@ git config --global init.defaultBranch main
 ```
 
 ## Workflow for publishing local edits to an existing Github remote repo
-- ```git add <file name>```
-- ```git commit -m "<commit message>"```
-- ```git push```
+- Track files: `git add <file name>`
+- Stage changes: `git commit -m "<commit message>"`
+- Publish changes to Github: `git push`
 
 ## Workflow for setting up new Github repo and publishing local repo to the remote repo
 
