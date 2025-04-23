@@ -10,30 +10,39 @@ GitOps is a methodology that uses Git repositories as the single source of truth
 
 directory is the same thing as folder
 
-pwd means present working directory
+- ```pwd``` means present working directory
 
-ls means list storage (print contents of directory)
+- ```ls``` means list storage (print contents of directory)
 
-cd means change directory
+- ```cd``` means change directory
 
-clear will empty the terminal of previous commands
+- ```clear``` will empty the terminal of previous commands
 
-. means present directory 
+```.``` means present directory 
 
-.. means the parent directory 
+```..``` means the parent directory 
+
+```~ ```means home directory 
+
+Press tab for autocomplete
 
 ## Inital Git setup
 
 Set your name for commmit messages and hashes:
-git config --global user.name "Your Name"
+```git config --global user.name "Your Name"```
 
 Set your email that you used for your Github account:
-git config --global user.email "your.email@example.com"
+```git config --global user.email "your.email@example.com"```
 
 Optional (if you want VS Code to do commit messages): 
-git config --global core.editor "code --wait"
+```git config --global core.editor "code --wait"```
 
 Optional, but nice, set default branch to main (standard default branch these days):
-git config --global init.defaultBranch main
+```git config --global init.defaultBranch main```
+
+## putting files into an existing repo workflow
+- ```git add <file name>```
+- ```git commit -m "<commit message>"```
+- ```git push```
 
 
