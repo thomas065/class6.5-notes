@@ -47,17 +47,20 @@ git config --global init.defaultBranch main
 
 ## Workflow: Publishing Local Edits to an Existing GitHub Remote
 
-1. Stage your changes:
+Stage your changes:
+
     ```bash
     git add <file-name>
     ```
 
-2. Commit your changes:
+Commit your changes:
+
     ```bash
     git commit -m "Your descriptive commit message"
     ```
 
-3. Push your changes to GitHub:
+Push your changes to GitHub:
+
     ```bash
     git push
     ```
@@ -65,37 +68,44 @@ git config --global init.defaultBranch main
 
 ## Workflow: Setting Up a New GitHub Repository and Publishing Local Files
 
-1. Navigate to your project directory:
+Navigate to your project directory:
+
     ```bash
     cd /path/to/your/project
     ```
 
-2. Initialize a Git repository (if not already):
+Initialize a Git repository (if not already):
+
     ```bash
     git init
     ```
 
-3. Stage all your existing files:
+Stage all your existing files:
+
     ```bash
     git add .
     ```
 
-4. Commit your changes:
+Commit your changes:
+
     ```bash
     git commit -m "Initial commit"
     ```
 
-5. Add your remote origin:
+Add your remote origin:
+
     ```bash
     git remote add origin https://github.com/your-username/your-repo.git
     ```
 
-6. Rename the default branch to `main`:
+Rename the default branch to `main`:
+
     ```bash
     git branch -M main
     ```
 
-7. Push your initial commit to GitHub:
+Push your initial commit to GitHub:
+
     ```bash
     git push -u origin main
     ```
