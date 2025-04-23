@@ -30,19 +30,23 @@ Press tab for autocomplete
 
 Set your name for commmit messages and hashes:
 ```bash
-git config --global user.name "Your Name"```
+git config --global user.name "Your Name"
+```
 
 Set your email that you used for your Github account:
 ```bash
-git config --global user.email "your.email@example.com"```
+git config --global user.email "your.email@example.com"
+```
 
 Optional (if you want VS Code to do commit messages): 
 ```bash
-git config --global core.editor "code --wait"```
+git config --global core.editor "code --wait"
+```
 
 Optional, but nice, set default branch to main (standard default branch these days):
 ```bash
-git config --global init.defaultBranch main```
+git config --global init.defaultBranch main
+```
 
 ## putting files into an existing repo workflow
 - ```git add <file name>```
