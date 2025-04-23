@@ -117,3 +117,16 @@ Push your initial commit to GitHub:
 ```bash
 git push -u origin main
 ```
+
+## Miscellaneous Git Commands
+
+Check the current state of your working directory and staging area:
+```bash
+git status
+```
+
+View the history of commits in the current branch:
+```bash
+git log
+```
+
