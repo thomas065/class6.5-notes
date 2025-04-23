@@ -35,12 +35,12 @@ Set your email that you used for your Github account:
 git config --global user.email "your.email@example.com"
 ```
 
-**Optional** Set VS Code as default git editor (to do commit messages, conflicts, etc): 
+**Optional:** Set VS Code as default git editor (to do commit messages, conflicts, etc): 
 ```bash
 git config --global core.editor "code --wait"
 ```
 
-**Optional** (nice to use once comfortable) sets default branch to main (standard default branch these days):
+**Optional:** (nice to use once comfortable) sets default branch to main (standard default branch these days):
 ```bash
 git config --global init.defaultBranch main
 ```
