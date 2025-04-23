@@ -50,7 +50,6 @@ git config --global init.defaultBranch main
 ## Workflow: Publishing Local Edits to an Existing GitHub Remote
 
 Stage your changes:
-
 ```bash
 git add <file-name>
 ```
