@@ -18,6 +18,7 @@ A directory is another term for folder.
 - `..`: Refers to the parent directory.
 - `~`: Refers to the home directory.
 - `touch <file name>`: Makes a file
+- `cat <file name>`: display file contents
 - `code .`: open present directory in VS code
 - `
 - Get to the correct location on your computer 
