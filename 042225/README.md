@@ -6,6 +6,9 @@ Git is a distributed version control system that tracks changes to code, allowin
 
 GitOps is a DevOps methodology that uses Git repositories as the single source of truth for declarative infrastructure and application configurations (for example, Terraform for infrastructure and Kubernetes manifests for applications). Every change is made by committing to Git, which triggers automated pipelines (CI/CD) to apply these changes. This approach ensures versioned, auditable, and reproducible deployments.
 
+## Git tutorial 
+[KillerCoda Git tutorial](https://killercoda.com/pawelpiwosz/course/gitFundamentals)
+
 ## CLI File Management
 
 A directory is another term for folder. 
