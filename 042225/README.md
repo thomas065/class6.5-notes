@@ -71,7 +71,7 @@ git commit -m "Your descriptive commit message"
 Push your changes to GitHub:
 
 ```bash
-git push
+git push -u origin main
 ```
 
 
